@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Thanarat | FiveM Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #0b0f1a;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .skill-badge {
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            color: #38bdf8;
+        }
+
+        .work-node::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 10px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #38bdf8;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <header class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+        <div class="absolute w-96 h-96 bg-blue-600/20 rounded-full blur-[100px] -top-20 -left-20"></div>
+        <div class="absolute w-96 h-96 bg-purple-600/20 rounded-full blur-[100px] -bottom-20 -right-20"></div>
+
+        <div class="z-10">
+            <div class="mb-8 relative inline-block">
+                <img src="profile.jpg" alt="Don Thanarat"
+                    onerror="this.src='https://ui-avatars.com/api/?name=Don+Thanarat&background=0D8ABC&color=fff&size=200'"
+                    class="w-40 h-40 rounded-3xl object-cover border-4 border-slate-800 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-300">
+                <div class="absolute -bottom-2 -right-2 bg-green-500 w-6 h-6 rounded-full border-4 border-slate-900">
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 uppercase tracking-tight">ธนะรัชต์ <span
+                    class="gradient-text">อพันหอม</span></h1>
+            <p class="text-xl md:text-2xl text-slate-400 font-light">Full-Stack FiveM Developer | 5 Years Experience</p>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <a href="#contact"
+                    class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-xl font-semibold transition-all">ติดต่องาน</a>
+                <a href="https://www.youtube.com/@DONKADEVELOPER" target="_blank"
+                    class="glass-card px-8 py-3 rounded-xl font-semibold hover:bg-slate-800 transition-all flex items-center gap-2">
+                    <i class="fab fa-youtube text-red-500"></i> ผลงานเก่า
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <section class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">About <span class="text-blue-400">Me</span></h2>
+                <p class="text-slate-400 text-lg leading-relaxed">
+                    ชื่อเล่น **ดอน** อายุ 22 ปี เป็นนักพัฒนาหลังบ้านและ UI ในโลก FiveM ที่มีประสบการณ์ยาวนานกว่า 5 ปี
+                    เชี่ยวชาญการเขียนสคริปต์ตั้งแต่ 0-100% พร้อมเชื่อมต่อ UI ได้ทุกลูกเล่น สามารถรับจบได้ทั้งระบบ
+                    (Full-Stack)
+                    และดูแลเซิฟเวอร์ขนาดใหญ่มาแล้วมากมาย
+                </p>
+                <div class="mt-8 grid grid-cols-2 gap-4">
+                    <div class="glass-card p-4 rounded-2xl">
+                        <p class="text-3xl font-bold text-blue-400">50+</p>
+                        <p class="text-sm text-slate-500">Original Scripts</p>
+                    </div>
+                    <div class="glass-card p-4 rounded-2xl">
+                        <p class="text-3xl font-bold text-purple-400">10+</p>
+                        <p class="text-sm text-slate-500">Major Servers</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-6 glass-card rounded-3xl border-t-4 border-blue-500">
+                    <h4 class="font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-code text-blue-400"></i> Programming
+                    </h4>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="skill-badge px-3 py-1 rounded-full">LUA (Master)</span>
+                        <span class="skill-badge px-3 py-1 rounded-full">JS (Master)</span>
+                        <span class="skill-badge px-3 py-1 rounded-full">PHP (Master)</span>
+                        <span class="skill-badge px-3 py-1 rounded-full">SQL (Master)</span>
+                    </div>
+                </div>
+                <div class="p-6 glass-card rounded-3xl border-t-4 border-purple-500">
+                    <h4 class="font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-desktop text-purple-400"></i> Front-End
+                    </h4>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="skill-badge px-3 py-1 rounded-full">HTML/CSS</span>
+                        <span class="skill-badge px-3 py-1 rounded-full">UX/UI Design</span>
+                        <span class="skill-badge px-3 py-1 rounded-full">JS Frameworks</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-bold mb-12 text-center">Active <span class="text-blue-400">Projects</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-3xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10"><i class="fas fa-store text-6xl"></i></div>
+                    <h3 class="text-2xl font-bold mb-2">LA Store</h3>
+                    <p class="text-blue-400 text-sm mb-4 italic">CO-Founder / Full-Stack</p>
+                    <ul class="text-slate-400 text-sm space-y-2 mb-6">
+                        <li>• ระบบการาจ & งานฟาร์ม</li>
+                        <li>• ระบบแจ้งเตือน + Twitter</li>
+                        <li>• ระบบแต่งตัวละคร + ไฟมุมกล้อง</li>
+                        <li>• ระบบลำโพง (Youtube Search)</li>
+                    </ul>
+                    <a href="https://discord.gg/8bSAGXTxyJ" target="_blank"
+                        class="text-white bg-slate-700 hover:bg-slate-600 w-full block text-center py-2 rounded-xl transition">Visit
+                        Shop</a>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl relative overflow-hidden">
+                    <h3 class="text-2xl font-bold mb-2">ReawX</h3>
+                    <p class="text-purple-400 text-sm mb-4 italic">Supporter / UX/UI</p>
+                    <ul class="text-slate-400 text-sm space-y-2 mb-6">
+                        <li>• Twitter Management</li>
+                        <li>• Menu Skin & Clothing</li>
+                        <li>• Weapon Skin System</li>
+                        <li>• Full UI Services (CarHud, NC, etc.)</li>
+                    </ul>
+                    <a href="https://discord.gg/F6JUsAr3s3" target="_blank"
+                        class="text-white bg-slate-700 hover:bg-slate-600 w-full block text-center py-2 rounded-xl transition">Visit
+                        Shop</a>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold mb-2">ST Developer</h3>
+                    <p class="text-emerald-400 text-sm mb-4 italic">Supporter / UX/UI</p>
+                    <ul class="text-slate-400 text-sm space-y-2 mb-6">
+                        <li>• ระบบงานฟาร์ม & เลี้ยงสัตว์</li>
+                        <li>• บริหารจัดการระบบ UI</li>
+                        <li>• เชื่อมต่อ UI กว่า 10 เซิฟเวอร์</li>
+                    </ul>
+                    <a href="https://discord.gg/CVGEMqCtU6" target="_blank"
+                        class="text-white bg-slate-700 hover:bg-slate-600 w-full block text-center py-2 rounded-xl transition">Visit
+                        Shop</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-4xl mx-auto px-4">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="bg-blue-600 w-2 h-8 rounded-full"></div>
+                <h2 class="text-3xl font-bold uppercase tracking-tight">Server <span
+                        class="text-blue-400">History</span></h2>
+            </div>
+
+            <div class="space-y-6">
+                <div class="space-y-4">
+                    <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-widest ml-2">Roleplay & Evolution
+                    </h3>
+
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4 border-l-4 border-blue-500 hover:bg-slate-800/50 transition-all">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-blue-500/10 p-3 rounded-xl"><i class="fas fa-bolt text-blue-400"></i></div>
+                            <div>
+                                <h4 class="text-xl font-bold text-white">Made In Thailand (1.0 / 2.0 / Tunder)</h4>
+                                <p class="text-sm text-slate-400">แนวโรลเพลย์ และ เซิฟเวอร์ X10</p>
+                            </div>
+                        </div>
+                        <span
+                            class="text-xs font-bold py-1 px-3 bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30 w-fit">MAJOR
+                            PROJECT</span>
+                    </div>
+
+                    <div
+                        class="glass-card p-6 rounded-2xl flex items-center gap-4 border-l-4 border-slate-700 hover:border-blue-400 transition-all">
+                        <div class="bg-slate-800 p-3 rounded-xl"><i class="fas fa-users text-slate-400"></i></div>
+                        <div>
+                            <h4 class="text-lg font-bold">Klongtoei SS2 (เซิฟ Ninjo)</h4>
+                            <p class="text-sm text-slate-500">แนวโรลเพลย์</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="glass-card p-6 rounded-2xl flex items-center gap-4 border-l-4 border-slate-700 hover:border-blue-400 transition-all">
+                        <div class="bg-slate-800 p-3 rounded-xl"><i class="fas fa-city text-slate-400"></i></div>
+                        <div>
+                            <h4 class="text-lg font-bold">Iris City & Buffet City</h4>
+                            <p class="text-sm text-slate-500">แนวโรลเพลย์</p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div
+                            class="glass-card p-5 rounded-2xl flex items-center gap-4 border-l-4 border-slate-700 hover:border-blue-400 transition-all">
+                            <i class="fas fa-water text-sky-400 text-xl ml-2"></i>
+                            <div>
+                                <h4 class="font-bold">Crazy Ocean World</h4>
+                                <p class="text-xs text-slate-500">แนวโรลเพลย์</p>
+                            </div>
+                        </div>
+                        <div
+                            class="glass-card p-5 rounded-2xl flex items-center gap-4 border-l-4 border-slate-700 hover:border-blue-400 transition-all">
+                            <i class="fas fa-star text-yellow-500 text-xl ml-2"></i>
+                            <div>
+                                <h4 class="font-bold">ICON 2.0</h4>
+                                <p class="text-xs text-slate-500">แนวโรลเพลย์</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4 pt-8">
+                    <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-widest ml-2">School & Highschool
+                        Mode</h3>
+
+                    <div
+                        class="glass-card p-6 rounded-2xl flex items-center gap-4 border-l-4 border-purple-500 hover:bg-purple-500/5 transition-all">
+                        <div class="bg-purple-500/10 p-3 rounded-xl"><i class="fas fa-crown text-purple-400"></i></div>
+                        <div>
+                            <h4 class="text-lg font-bold text-white">4Kings สายเลือดอาชีวะ</h4>
+                            <p class="text-sm text-slate-400">แนวโรงเรียน</p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div
+                            class="glass-card p-5 rounded-2xl flex items-center gap-4 border-l-4 border-slate-700 hover:border-purple-400 transition-all">
+                            <i class="fas fa-graduation-cap text-purple-400 text-xl ml-2"></i>
+                            <div>
+                                <h4 class="font-bold">Matthayom Highschool</h4>
+                                <p class="text-xs text-slate-500">แนวโรงเรียน</p>
+                            </div>
+                        </div>
+                        <div
+                            class="glass-card p-5 rounded-2xl flex items-center gap-4 border-l-4 border-slate-700 hover:border-purple-400 transition-all">
+                            <i class="fas fa-history text-purple-400 text-xl ml-2"></i>
+                            <div>
+                                <h4 class="font-bold">ดึกดำบรรพ์ Highschool</h4>
+                                <p class="text-xs text-slate-500">แนวโรงเรียน</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="text-center py-20 bg-blue-600 rounded-[3rem] shadow-2xl shadow-blue-600/20">
+            <h2 class="text-4xl font-bold mb-4">สนใจร่วมงานกับผม?</h2>
+            <p class="mb-10 opacity-90 text-lg italic">รับทำสคริปต์ตาม Requirement, ออกแบบ UI และระบบเว็บไซต์เติมเงิน
+            </p>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="flex items-center gap-2"><i class="fab fa-discord text-2xl"></i> <span>@dxnkx_.</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-phone text-2xl"></i> <span>061-997-0355</span>
+                </div>
+                <div class="flex items-center gap-2"><i class="fab fa-facebook text-2xl"></i> <span>Thanarat
+                        Ampanhom</span></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-10 text-center text-slate-600 text-sm">
+        &copy; 2026 Thanarat Ampanhom. Built with ❤️ for FiveM Community.
+    </footer>
+
+</body>
+
+</html>
